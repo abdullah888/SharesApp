@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H8G-RQ-YyT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SharesXC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Xyq-jx-f4w">
+                                <rect key="frame" x="8" y="658" width="398" height="94"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1aR-eV-nkK">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="43"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NfZ-dE-gLw">
+                                        <rect key="frame" x="0.0" y="51" width="398" height="43"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gbi-xR-jA5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="896" id="13u-vp-1nh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Gbi-xR-jA5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="F3m-O5-w9F"/>
+                            <constraint firstItem="Gbi-xR-jA5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KS8-W6-HhL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xyq-jx-f4w" secondAttribute="trailing" constant="8" id="L0t-86-si1"/>
+                            <constraint firstItem="Gbi-xR-jA5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-140" id="QQ4-pg-wbZ"/>
+                            <constraint firstItem="Gbi-xR-jA5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="R9Z-U9-zkY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xyq-jx-f4w" secondAttribute="bottom" constant="110" id="Ztf-lI-rwA"/>
+                            <constraint firstItem="Gbi-xR-jA5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fX4-h0-FGA"/>
+                            <constraint firstAttribute="bottom" secondItem="Gbi-xR-jA5" secondAttribute="bottom" id="reU-rq-oQp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gbi-xR-jA5" secondAttribute="trailing" id="uWb-ao-62l"/>
+                            <constraint firstItem="Xyq-jx-f4w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="wUF-Jr-zYo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JtF-RE-Pgw">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="paperplane.fill" catalog="system" id="hYT-d6-WXu">
+                                <color key="tintColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="shareAction:" destination="BYZ-38-t0r" id="bsq-UA-KTl"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="camera.fill" catalog="system" springLoaded="YES" id="Zh4-DI-oUd">
+                                <color key="tintColor" red="1" green="0.7712717898" blue="0.28657427229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="takeNewPicture:" destination="BYZ-38-t0r" id="saL-jt-LVv"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="photo.fill" catalog="system" springLoaded="YES" id="3Bh-wX-KQ3">
+                                <color key="tintColor" red="1" green="0.7712717898" blue="0.28657427229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="chooseFromAlbum:" destination="BYZ-38-t0r" id="KnC-9g-X9G"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="BottomText" destination="NfZ-dE-gLw" id="iRm-2o-OfO"/>
+                        <outlet property="CameraOutLet" destination="Zh4-DI-oUd" id="3Jc-MW-W7J"/>
+                        <outlet property="ImageView" destination="Gbi-xR-jA5" id="vYa-0Y-uSW"/>
+                        <outlet property="ShareOutLet" destination="hYT-d6-WXu" id="HF7-9M-gTm"/>
+                        <outlet property="TopText" destination="1aR-eV-nkK" id="q9j-7K-4Dd"/>
+                        <outlet property="imageViewHeightConstraint" destination="R9Z-U9-zkY" id="MeW-OS-3TM"/>
+                        <outlet property="imageViewWidthConstraint" destination="reU-rq-oQp" id="GlH-kX-gQh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957.9710144927537" y="63.616071428571423"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9Bv-Pn-uMG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H8G-RQ-YyT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" shadowImage="1" largeTitles="YES" id="Sim-GP-rTo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gqi-vl-bcj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UZF-uZ-JvO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="63.616071428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="6016" height="4016"/>
+        <image name="camera.fill" catalog="system" width="128" height="94"/>
+        <image name="paperplane.fill" catalog="system" width="128" height="118"/>
+        <image name="photo.fill" catalog="system" width="128" height="93"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
